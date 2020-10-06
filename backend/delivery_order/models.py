@@ -22,6 +22,10 @@ class Bill(models.Model):
         on_delete=models.SET_NULL,
         related_name="bill_contact_info",
     )
+    phone_number = models.TextField(
+        null=True,
+        blank=True,
+    )
 
 
 class PaymentMethod(models.Model):
